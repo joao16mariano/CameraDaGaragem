@@ -39,7 +39,7 @@ void setup() {
  digitalWrite(led0, LOW); 
   
   pinMode(led5,OUTPUT);
-  digitalWrite(led5, HIGH);    
+  digitalWrite(led5, LOW);    
   
         
  pinMode(led8,OUTPUT);
@@ -49,9 +49,9 @@ void setup() {
   digitalWrite(led8, LOW);
   delay(2000);
   digitalWrite(led8, HIGH);  
-  delay(2000);
-  
+  delay(2000);  
   digitalWrite(led8, LOW);
+  
   delay(2000); 
   digitalWrite(led8, HIGH);
   delay(2000);
@@ -140,7 +140,7 @@ void loop() {
   }
 
 
-  stepsPerRevolution = 50;
+  stepsPerRevolution = 64;
 
   if (Retecao1()) {
     digitalWrite(pinoLedVermelho, HIGH);       
@@ -187,6 +187,5 @@ bool Retecao1() {
 
   return estadoRet;
 }
-
 
 
